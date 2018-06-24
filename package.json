@@ -1,0 +1,25 @@
+{
+  "name": "nodetemplate",
+  "version": "1.0.0",
+  "description": "My personal node template.",
+  "main": "server.js",
+  "author": "Kumaran G",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cookie-parser": "*",
+    "express": "*",
+    "pug": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "path": "*",
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*"
+  }
+}

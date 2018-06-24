@@ -1,0 +1,6 @@
+//ignore git modules
+node_modules/
+
+//ignore config folder
+// uncomment the next line in your project
+// config/
