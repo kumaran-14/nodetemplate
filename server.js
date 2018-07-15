@@ -1,3 +1,4 @@
+const signale = require('signale')
 const mongoose = require('mongoose');
 const express = require('express');
 const path = require('path');
@@ -14,10 +15,10 @@ const app = express();
 //database Connection
 mongoose.connect(config.mongodb.dbURI)
 .then(()=>{
-  console.log('*****Database Connection Successfull******');
+  signale.success('*****Database Connection Successfull******');
 }).catch(err=>{
-  console.log(err);
-  console.log('Could not connect to Database. Exiting now...');
+  signale.fatal(new Error(err));
+  signale.warn('Could not connect to Database. Exiting now...');
   process.exit();
 })
 let db = mongoose.connection
@@ -40,5 +41,5 @@ app.get('/',(req,res)=>{
 app.use('/default', defaultRouter);
 
 app.listen(3000,()=> {
-  console.log('Server Started on port: 3000');
+  signale.success('Server Started on port: 3000');
 })

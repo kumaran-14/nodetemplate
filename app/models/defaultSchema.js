@@ -4,4 +4,4 @@ const defaultSchema = mongoose.Schema({
 
 })
 
-module.exports = mongoose.model('', defaultSchema)
+module.exports = mongoose.model('collection name', defaultSchema)

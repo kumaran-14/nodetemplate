@@ -2,6 +2,6 @@
 
 module.exports = {
         mongodb: {
-            dbURI: ''
+            dbURI: 'http://localhost:3000/yourappname'
         }
 };
