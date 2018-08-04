@@ -35,7 +35,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //Home Route
 app.get('/',(req,res)=>{
-  res.render('users/user')
+
 })
 
 app.use('/default', defaultRouter);
